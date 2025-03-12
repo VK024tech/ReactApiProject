@@ -18567,6 +18567,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _searchBarJsx = require("./components/SearchBar.jsx");
@@ -18576,12 +18577,15 @@ var _selectMenuJsxDefault = parcelHelpers.interopDefault(_selectMenuJsx);
 var _countriesListJsx = require("./components/CountriesList.jsx");
 var _countriesListJsxDefault = parcelHelpers.interopDefault(_countriesListJsx);
 var _appCss = require("./App.css");
+var _s = $RefreshSig$();
 const App = ()=>{
+    _s();
+    const [query, setQuery] = (0, _react.useState)('');
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 10,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -18589,36 +18593,41 @@ const App = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "search-filter-container",
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchBarJsxDefault.default), {}, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchBarJsxDefault.default), {
+                                setQuery: setQuery
+                            }, void 0, false, {
                                 fileName: "App.jsx",
-                                lineNumber: 13,
+                                lineNumber: 15,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _selectMenuJsxDefault.default), {}, void 0, false, {
                                 fileName: "App.jsx",
-                                lineNumber: 14,
+                                lineNumber: 16,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "App.jsx",
-                        lineNumber: 12,
+                        lineNumber: 14,
                         columnNumber: 7
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _countriesListJsxDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _countriesListJsxDefault.default), {
+                        query: query
+                    }, void 0, false, {
                         fileName: "App.jsx",
-                        lineNumber: 16,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.jsx",
-                lineNumber: 11,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
+_s(App, "qO/HZodsWTfJhuzZtdaxiosei2U=");
 _c = App;
 exports.default = App;
 var _c;
@@ -18629,77 +18638,56 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./components/Header":"6nmoh","./components/SearchBar.jsx":"4HJPW","./components/SelectMenu.jsx":"hfvcB","./components/CountriesList.jsx":"bJsk6","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6nmoh":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$6433 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","./components/SearchBar.jsx":"4HJPW","./components/SelectMenu.jsx":"hfvcB","./components/CountriesList.jsx":"bJsk6","./App.css":"7g3a6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./components/Header":"6nmoh"}],"4HJPW":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e8d4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6433.prelude(module);
+$parcel$ReactRefreshHelpers$e8d4.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Header);
+parcelHelpers.export(exports, "default", ()=>SearchBar);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function Header() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: "header",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "header-content",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    className: "title",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "/",
-                        children: "Where in the world?"
-                    }, void 0, false, {
-                        fileName: "components/Header.jsx",
-                        lineNumber: 7,
-                        columnNumber: 35
-                    }, this)
-                }, void 0, false, {
-                    fileName: "components/Header.jsx",
-                    lineNumber: 7,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: "theme-chnager",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fa-regular fa-moon"
-                        }, void 0, false, {
-                            fileName: "components/Header.jsx",
-                            lineNumber: 8,
-                            columnNumber: 42
-                        }, this),
-                        "\xa0\xa0Dark Mode"
-                    ]
-                }, void 0, true, {
-                    fileName: "components/Header.jsx",
-                    lineNumber: 8,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "components/Header.jsx",
-            lineNumber: 6,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
-        fileName: "components/Header.jsx",
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function SearchBar({ setQuery }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "search-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                className: "fa-solid fa-magnifying-glass"
+            }, void 0, false, {
+                fileName: "components/SearchBar.jsx",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                onChange: (e)=>setQuery(e.target.value.toLowerCase()),
+                type: "text",
+                placeholder: "Search for a country..."
+            }, void 0, false, {
+                fileName: "components/SearchBar.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/SearchBar.jsx",
         lineNumber: 5,
         columnNumber: 5
     }, this);
 }
-_c = Header;
+_c = SearchBar;
 var _c;
-$RefreshReg$(_c, "Header");
+$RefreshReg$(_c, "SearchBar");
 
-  $parcel$ReactRefreshHelpers$6433.postlude(module);
+  $parcel$ReactRefreshHelpers$e8d4.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18874,56 +18862,7 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"4HJPW":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$e8d4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e8d4.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>SearchBar);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-function SearchBar() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "search-container",
-        bis_skin_checked: "1",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                className: "fa-solid fa-magnifying-glass"
-            }, void 0, false, {
-                fileName: "components/SearchBar.jsx",
-                lineNumber: 6,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                type: "text",
-                placeholder: "Search for a Country...."
-            }, void 0, false, {
-                fileName: "components/SearchBar.jsx",
-                lineNumber: 7,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/SearchBar.jsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = SearchBar;
-var _c;
-$RefreshReg$(_c, "SearchBar");
-
-  $parcel$ReactRefreshHelpers$e8d4.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hfvcB":[function(require,module,exports,__globalThis) {
+},{}],"hfvcB":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$65f8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -19015,32 +18954,35 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>CountriesList);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _countriesData = require("../CountriesData");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _countriesData = require("../countriesData");
 var _countriesDataDefault = parcelHelpers.interopDefault(_countriesData);
 var _countryCard = require("./CountryCard");
 var _countryCardDefault = parcelHelpers.interopDefault(_countryCard);
-function CountriesList() {
-    const array = (0, _countriesDataDefault.default).map((country)=>{
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _countryCardDefault.default), {
-            name: country.name.common,
-            flag: country.flags.svg,
-            population: country.population.toLocaleString("en-IN"),
-            region: country.region,
-            capital: country.capital?.[0]
-        }, country.name.common, false, {
+function CountriesList({ query }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "countries-container",
+            children: (0, _countriesDataDefault.default).filter((country)=>country.name.common.toLowerCase().includes(query)).map((country)=>{
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _countryCardDefault.default), {
+                    name: country.name.common,
+                    flag: country.flags.svg,
+                    population: country.population,
+                    region: country.region,
+                    capital: country.capital?.[0]
+                }, country.name.common, false, {
+                    fileName: "components/CountriesList.jsx",
+                    lineNumber: 15,
+                    columnNumber: 15
+                }, this);
+            })
+        }, void 0, false, {
             fileName: "components/CountriesList.jsx",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 7
-        }, this);
-    });
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "countries-container",
-        children: array
-    }, void 0, false, {
-        fileName: "components/CountriesList.jsx",
-        lineNumber: 18,
-        columnNumber: 10
-    }, this);
+        }, this)
+    }, void 0, false);
 }
 _c = CountriesList;
 var _c;
@@ -19051,7 +18993,114 @@ $RefreshReg$(_c, "CountriesList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../CountriesData":"5QwF8","./CountryCard":"aX1WT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5QwF8":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./CountryCard":"aX1WT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../countriesData":"hi7q6"}],"aX1WT":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$1d48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1d48.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>CountryCard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function CountryCard({ name, flag, population, region, capital }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        className: "country-card",
+        href: `/country.html?name=${name.common}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: flag,
+                alt: name + ' Flag'
+            }, void 0, false, {
+                fileName: "components/CountryCard.jsx",
+                lineNumber: 6,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-text",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "card-title",
+                        children: name
+                    }, void 0, false, {
+                        fileName: "components/CountryCard.jsx",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                children: "Population: "
+                            }, void 0, false, {
+                                fileName: "components/CountryCard.jsx",
+                                lineNumber: 10,
+                                columnNumber: 11
+                            }, this),
+                            population.toLocaleString('en-IN')
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/CountryCard.jsx",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                children: "Region: "
+                            }, void 0, false, {
+                                fileName: "components/CountryCard.jsx",
+                                lineNumber: 14,
+                                columnNumber: 11
+                            }, this),
+                            region
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/CountryCard.jsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
+                                children: "Capital: "
+                            }, void 0, false, {
+                                fileName: "components/CountryCard.jsx",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, this),
+                            capital
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/CountryCard.jsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/CountryCard.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/CountryCard.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = CountryCard;
+var _c;
+$RefreshReg$(_c, "CountryCard");
+
+  $parcel$ReactRefreshHelpers$1d48.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hi7q6":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 exports.default = [
@@ -72099,115 +72148,76 @@ exports.default = [
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aX1WT":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$1d48 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7g3a6":[function() {},{}],"6nmoh":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$6433 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1d48.prelude(module);
+$parcel$ReactRefreshHelpers$6433.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>CountryCard);
+parcelHelpers.export(exports, "default", ()=>Header);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-function CountryCard({ name, flag, population, region, capital }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        className: "country-card",
-        href: `/country.html?name=${name}`,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: flag,
-                alt: name + " Flag",
-                georgia: ""
-            }, void 0, false, {
-                fileName: "components/CountryCard.jsx",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card-text",
-                bis_skin_checked: "1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "card-title",
-                        children: name
+function Header() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+        className: "header",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "header-content",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "title",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "/",
+                        children: "Where in the world?"
                     }, void 0, false, {
-                        fileName: "components/CountryCard.jsx",
-                        lineNumber: 8,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                children: "Population: "
-                            }, void 0, false, {
-                                fileName: "components/CountryCard.jsx",
-                                lineNumber: 10,
-                                columnNumber: 11
-                            }, this),
-                            population
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/CountryCard.jsx",
-                        lineNumber: 9,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                children: "Region: "
-                            }, void 0, false, {
-                                fileName: "components/CountryCard.jsx",
-                                lineNumber: 14,
-                                columnNumber: 11
-                            }, this),
-                            region
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/CountryCard.jsx",
-                        lineNumber: 13,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                children: "Capital: "
-                            }, void 0, false, {
-                                fileName: "components/CountryCard.jsx",
-                                lineNumber: 17,
-                                columnNumber: 11
-                            }, this),
-                            capital
-                        ]
-                    }, void 0, true, {
-                        fileName: "components/CountryCard.jsx",
-                        lineNumber: 16,
-                        columnNumber: 9
+                        fileName: "components/Header.jsx",
+                        lineNumber: 7,
+                        columnNumber: 35
                     }, this)
-                ]
-            }, void 0, true, {
-                fileName: "components/CountryCard.jsx",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "components/CountryCard.jsx",
+                }, void 0, false, {
+                    fileName: "components/Header.jsx",
+                    lineNumber: 7,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "theme-chnager",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fa-regular fa-moon"
+                        }, void 0, false, {
+                            fileName: "components/Header.jsx",
+                            lineNumber: 8,
+                            columnNumber: 42
+                        }, this),
+                        "\xa0\xa0Dark Mode"
+                    ]
+                }, void 0, true, {
+                    fileName: "components/Header.jsx",
+                    lineNumber: 8,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "components/Header.jsx",
+            lineNumber: 6,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
+        fileName: "components/Header.jsx",
         lineNumber: 5,
         columnNumber: 5
     }, this);
 }
-_c = CountryCard;
+_c = Header;
 var _c;
-$RefreshReg$(_c, "CountryCard");
+$RefreshReg$(_c, "Header");
 
-  $parcel$ReactRefreshHelpers$1d48.postlude(module);
+  $parcel$ReactRefreshHelpers$6433.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7g3a6":[function() {},{}]},["aQL8O","5faqK","g9R30"], "g9R30", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","5faqK","g9R30"], "g9R30", "parcelRequire94c2")
 
 //# sourceMappingURL=index.d498c491.js.map

@@ -1,19 +1,28 @@
-import CountriesData from "../CountriesData";
-import CountryCard from "./CountryCard";
+import React, { useState } from 'react'
+import countriesData from '../countriesData'
+import CountryCard from './CountryCard'
 
-export default function CountriesList() {
-  const array = CountriesData.map((country) => {
-    return (
-      <CountryCard
-        key={country.name.common}
-        name={country.name.common}
-        flag={country.flags.svg}
-        population={country.population.toLocaleString("en-IN")}
-        region={country.region}
-        capital={country.capital?.[0]}
-      />
-    );
-  });
-
-  return <div className="countries-container">{array}</div>;
+export default function CountriesList({query}) {
+  return (
+    <>
+      <div className="countries-container">
+        {countriesData
+          .filter((country) =>
+            country.name.common.toLowerCase().includes(query)
+          )
+          .map((country) => {
+            return (
+              <CountryCard
+                key={country.name.common}
+                name={country.name.common}
+                flag={country.flags.svg}
+                population={country.population}
+                region={country.region}
+                capital={country.capital?.[0]}
+              />
+            )
+          })}
+      </div>
+    </>
+  )
 }
